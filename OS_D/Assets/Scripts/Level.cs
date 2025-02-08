@@ -10,15 +10,21 @@ public class Level : MonoBehaviour
     public int maxRoomSize = 7; // Максимальный размер комнаты
     public Material floorMaterial; // Материал для пола
     public Material wallMaterial; // Материал для стен
+    public GameObject playerPrefab; // Префаб игрока
+    public GameObject exitPrefab; // Префаб выхода
 
     private int[,] levelMatrix; // Матрица для представления уровня
     private List<Rect> roomPositions = new List<Rect>(); // Список позиций и размеров комнат
+    private Rect upperRoom; // Верхняя комната
+    private Rect lowerRoom; // Нижняя комната
 
     private void Start()
     {
         GenerateLevel();
         PrintLevelMatrix(); // Выводим матрицу в консоль
         CreateVisuals();
+        SpawnPlayer(); // Спавн игрока
+        SpawnExit(); // Спавн выхода
     }
 
     private void GenerateLevel()
@@ -208,5 +214,26 @@ public class Level : MonoBehaviour
             output += "\n"; // Переход на новую строку
         }
         Debug.Log(output); // Выводим в консоль
+    }
+    private void SpawnPlayer()
+    {
+        // Спавн игрока в центре верхней комнаты
+        if (upperRoom != Rect.zero)
+        {
+            Vector3 playerPosition = new Vector3(upperRoom.x + upperRoom.width / 2, 0, upperRoom.y + upperRoom.height / 2);
+            Instantiate(playerPrefab, playerPosition, Quaternion.identity);
+            Debug.Log($"Player spawned at: {playerPosition}");
+        }
+    }
+
+    private void SpawnExit()
+    {
+        // Спавн выхода в центре нижней комнаты
+        if (lowerRoom != Rect.zero)
+        {
+            Vector3 exitPosition = new Vector3(lowerRoom.x + lowerRoom.width / 2, 0, lowerRoom.y + lowerRoom.height / 2);
+            Instantiate(exitPrefab, exitPosition, Quaternion.identity);
+            Debug.Log($"Exit spawned at: {exitPosition}");
+        }
     }
 }
