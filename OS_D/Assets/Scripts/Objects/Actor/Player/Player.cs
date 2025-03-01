@@ -19,7 +19,7 @@ public class Player : Actor
 
     public void Move(Vector2 direction)
     {
-        this.rigidBody.MovePosition(this.rigidBody.position + direction * moveSpeed * Time.fixedDeltaTime); //TODO: Time.fixedDeltaTime разобраться
+        this.rigidBody.MovePosition(this.rigidBody.position + direction * moveSpeed * Time.fixedDeltaTime);
     }
 
 }

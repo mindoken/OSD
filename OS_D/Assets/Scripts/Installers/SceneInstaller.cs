@@ -5,6 +5,7 @@ namespace Game
 {
     public sealed class SceneInstaller: MonoInstaller
     {
+        public Transform enemyMarkers;
         public Transform playerSpawnPoint;
         public GameObject playerPrefab;
         public override void InstallBindings()
@@ -27,6 +28,11 @@ namespace Game
                 .Bind<Camera>()
                 .FromComponentInHierarchy()
                 .AsSingle();
+
+            Container
+                .BindInterfacesTo<TestLevelLoader>()
+                .AsSingle()
+                .WithArguments(enemyMarkers);
 
         }
 

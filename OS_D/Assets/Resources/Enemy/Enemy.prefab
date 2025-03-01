@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: -6613603414518361988}
   - component: {fileID: -8841060774735279814}
   - component: {fileID: 1019731343784683440}
+  - component: {fileID: -6892928630294238761}
   - component: {fileID: 5128899631486207184}
   - component: {fileID: 541144515922332106}
   - component: {fileID: 5679022493591786746}
@@ -264,6 +265,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 1019731343784683440}
+  - {fileID: -6892928630294238761}
   _installerPrefabs: []
   _autoRun: 1
   _kernel: {fileID: 259313046726431034}
@@ -277,6 +279,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3658bef899f649a4d9e95049e17cdf3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6892928630294238761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8859082339480501938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb95d04816d0c674faf9082d5d45b02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &5128899631486207184
@@ -326,6 +340,7 @@ MonoBehaviour:
   _moveSpeed: 3
   countThroughShoot: 1
   b_freezeSpeed: 0
+  maxSpeed: 1
   velocity: {x: 0, y: 0}
 --- !u!114 &5679022493591786746
 MonoBehaviour:

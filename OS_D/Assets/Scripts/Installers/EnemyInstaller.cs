@@ -16,7 +16,11 @@ namespace Game
                 .AsSingle();
 
             Container
-                .BindInterfacesTo<AIService>()
+                .BindInterfacesTo<EnemyController>()
+                .AsSingle();
+
+            Container
+                .BindInterfacesTo<EnemyDetection>()
                 .AsSingle();
         }
     }

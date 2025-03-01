@@ -41,6 +41,10 @@ namespace Game
                 .BindInterfacesTo<GameCycleController>()
                 .AsSingle();
 
+            Container
+                .Bind<EnemyLoader>()
+                .AsSingle();
+
         }
     }
 }
