@@ -14,8 +14,7 @@ namespace Game
         private GameCycle gameCycle;
 
         [InjectLocal]
-        private List<IGameListener> listeners = new();
-
+        private readonly List<IGameListener> listeners = new();
 
         private void Start()
         {

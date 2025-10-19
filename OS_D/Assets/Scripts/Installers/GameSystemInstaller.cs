@@ -12,7 +12,6 @@ namespace Game
         private readonly Vector3 cameraOffset = new Vector3(0, 0, 10);
         public override void InstallBindings()
         {
-          
             Container
                 .BindInterfacesTo<MoveInput>()
                 .AsSingle();
@@ -44,7 +43,6 @@ namespace Game
             Container
                 .Bind<EnemyLoader>()
                 .AsSingle();
-
         }
     }
 }
