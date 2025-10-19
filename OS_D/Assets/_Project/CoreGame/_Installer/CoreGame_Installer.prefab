@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4281418054250901685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6592189219086834300}
+  - component: {fileID: 1830776336338335456}
+  m_Layer: 0
+  m_Name: CoreGame_Installer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6592189219086834300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281418054250901685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1830776336338335456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281418054250901685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f4559e5dd85714abb4b21d7a4eee2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plants:
+  - {fileID: 11400000, guid: 16a761df7760c2140b5bd3a7bf764eac, type: 2}
+  _seedInventoryInitialData:
+  - PlantId: coin_bush
+    Genoms: 3200000032000000320000003200000032000000
+  _plantPoolInfo:
+    Prefab: {fileID: 755900365797761164, guid: 51c66f5394f8d3d4388e6b53e3dae64e, type: 3}
+    Name: 2
+    TransformName: 0
+    InitialCount: 100
+  _platformPoolInfo:
+    Prefab: {fileID: 2854212713789589461, guid: 4515fcf6e89b65e4a833c21c307f696f, type: 3}
+    Name: 1
+    TransformName: 0
+    InitialCount: 100
+  _platformsPipeline: {fileID: 11400000, guid: 1dec6fe3d029fb44ab8f38d579e6d525, type: 2}
+  _rainSystemSettings:
+    rainColorSettings:
+      color1: {r: 0.8396226, g: 0.3451612, b: 0.10693307, a: 1}
+      color2: {r: 0.8113208, g: 0.5173176, b: 0.12629052, a: 1}
+      color3: {r: 0.75539935, g: 0.764151, b: 0.1477839, a: 0.43137255}
+      color4: {r: 0.7924528, g: 0.13830544, b: 0.13830544, a: 0.23921569}
+    globalLightSettings:
+      color: {r: 1, g: 1, b: 1, a: 1}
+      intensity: 1
+    spotLightSettings:
+      color: {r: 1, g: 1, b: 1, a: 1}
+      intensity: 1
+    transitionDuration: 5
+  _toolConfigs:
+  - {fileID: 11400000, guid: ed966452eda5a2f4d9e6c63329bcbf37, type: 2}
+  - {fileID: 11400000, guid: cd8a6f262b4c89a439943b35a25012c0, type: 2}
+  - {fileID: 11400000, guid: 65dfb88c136ce8b40a10526bb371ef54, type: 2}

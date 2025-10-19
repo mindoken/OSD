@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3812564632211590051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559721544865807204}
+  - component: {fileID: 9032747170641031722}
+  m_Layer: 0
+  m_Name: UI_Installer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559721544865807204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812564632211590051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9032747170641031722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812564632211590051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27e472268b6c28843868f73fb811567b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currencyBankWidgetPipeline:
+  - {fileID: 11400000, guid: e99c1d7786f0b974187f85c79927b74e, type: 2}
+  _globalSettingsPanelPipeline: {fileID: 11400000, guid: 6e460f57b07d9a84790a03aa9f8003ea, type: 2}
+  _rightPanelPipeline: {fileID: 11400000, guid: c0d21a0dde109a347b8fe5efd55d3c40, type: 2}
+  _toolsWidgetPipeline: {fileID: 11400000, guid: bacad0dbbe4d09e42b92433bbbd48d35, type: 2}
+  _hintPopupPipeline: {fileID: 11400000, guid: 79abcb572ea101446ab77db1cfb4bc7a, type: 2}
