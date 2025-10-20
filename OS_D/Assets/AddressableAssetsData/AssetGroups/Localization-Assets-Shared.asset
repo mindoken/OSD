@@ -16,19 +16,19 @@ MonoBehaviour:
   m_GUID: 05f7c3dc2ff2f474d97b4e888678c6b6
   m_SerializeEntries:
   - m_GUID: 0f06bd739ac490949a98383ebb7939f4
-    m_Address: Assets/_Project/Application/Localization/Content/Tables/AssetTables/FontTable/FontTable
+    m_Address: Assets/_Project/Content/Localization/Tables/AssetTables/FontTable/FontTable
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6474f024458f3d64984e0dc74afa86dc
-    m_Address: Assets/_Project/Application/Localization/Content/Tables/AssetTables/FontPresetTable/FontPresetTable
+    m_Address: Assets/_Project/Content/Localization/Tables/AssetTables/FontPresetTable/FontPresetTable
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7afb5fd9fe8081d44b8f43f6876a31a2
-    m_Address: Assets/_Project/Application/Localization/Content/Tables/StringTables/MainString
+    m_Address: Assets/_Project/Content/Localization/Tables/StringTables/MainString
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
